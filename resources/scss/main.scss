@@ -1,3 +1,9 @@
-body{
-    background-color: chocolate;
-}
+@import 'vendors/reset';
+
+@import 'base/colors';
+
+@import 'layout/header';
+
+@import'pages/cocktails';
+
+@import 'layout/footer';

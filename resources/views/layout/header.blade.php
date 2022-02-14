@@ -11,4 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>Test 1, 2, test</header>
+    <header>
+        <h1>Cocktails API</h1>
+    </header>

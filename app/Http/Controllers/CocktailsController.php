@@ -9,7 +9,7 @@ class CocktailsController extends Controller
 {
     public function index(){
         $cocktails = [];
-        for ($i=11000; $i<11005; $i++){
+        for ($i=11000; $i<11015; $i++){
 
             $response = Http::get("http://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=".$i);
             $data = $response->json();
