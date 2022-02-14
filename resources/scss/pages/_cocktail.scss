@@ -1,0 +1,59 @@
+.cocktail{
+
+    max-width: 1145px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    img{
+
+        width: 407px;
+        height: 560px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 35px;
+
+    }
+
+    .right{
+
+        max-width: 703px;
+
+        h2{
+
+            font-size: 50px;
+            margin-bottom: 50px;
+            font-weight: 700;
+
+        }
+
+        h3{
+
+            font-size: 30px;
+            margin-bottom: 25px;
+            font-weight: 700;
+
+        }
+
+        .cocktailIngredients{
+
+            margin-bottom: 25px;
+
+            ul li{
+
+                line-height: 40px;
+                margin-left: 40px;
+
+            }
+
+        }
+
+        .cocktailInstructions{
+
+
+
+        }
+
+    }
+
+}

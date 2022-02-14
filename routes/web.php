@@ -17,3 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/cocktails', [App\Http\Controllers\CocktailsController::class, 'index'])->name('cocktails.index');
+
+//Route::get('/cocktail', [App\Http\Controllers\CocktailController::class, 'index'])->name('cocktail.index');
+Route::get('/cocktail/{idDrink}', [App\Http\Controllers\CocktailController::class, 'index'])->name('cocktail.index');

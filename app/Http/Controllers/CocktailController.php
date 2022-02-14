@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\Http;
 
 class CocktailController extends Controller
 {
-    public function index(){
-        $response = Http::get("http://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11000");
-        $data = $response->json();
-        dd($data['id']);
 
-        echo('Test');
+    public function index($id){
+        $response = Http::get("http://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=".$id);
+        $response = $response->json();
 
+        return view('pages/cocktail', [
+            'cocktail' => $response['drinks']['0']
+        ]);
     }
 }

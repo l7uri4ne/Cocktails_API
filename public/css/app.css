@@ -101,6 +101,40 @@ body .cocktailsImages div:hover p {
   transition: all 300ms ease-out;
 }
 
+.cocktail {
+  max-width: 1145px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cocktail img {
+  width: 407px;
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-right: 35px;
+}
+.cocktail .right {
+  max-width: 703px;
+}
+.cocktail .right h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.cocktail .right h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.cocktail .right .cocktailIngredients {
+  margin-bottom: 25px;
+}
+.cocktail .right .cocktailIngredients ul li {
+  line-height: 40px;
+  margin-left: 40px;
+}
 footer {
   background-color: #e088e9;
 }
