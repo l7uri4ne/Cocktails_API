@@ -17,6 +17,6 @@ class CocktailsController extends Controller
             $cocktails[$i] = $data['drinks']['0'];
 
         }
-        return view('cocktails', ['pages/cocktails' => $cocktails]);
+        return view('pages/cocktails', ['cocktails' => $cocktails]);
     }
 }
