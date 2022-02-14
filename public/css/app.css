@@ -52,13 +52,18 @@ table {
   border-spacing: 0;
 }
 
-header {
-  background-color: #e96170;
+header h1 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
 }
 
 body {
   background-color: #FFF9E4;
   font-family: "Nunito", sans-serif;
+  color: #5A5050;
 }
 body .cocktailsImages {
   display: flex;
