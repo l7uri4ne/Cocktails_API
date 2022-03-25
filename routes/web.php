@@ -20,3 +20,15 @@ Route::get('/cocktails', [App\Http\Controllers\CocktailsController::class, 'inde
 
 //Route::get('/cocktail', [App\Http\Controllers\CocktailController::class, 'index'])->name('cocktail.index');
 Route::get('/cocktail/{idDrink}', [App\Http\Controllers\CocktailController::class, 'index'])->name('cocktail.index');
+
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact.index');
+
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
+
+Route::get('/test-contact', function () {
+    return new App\Mail\Contact([
+        'nom' => 'Durand',
+        'email' => 'durand@chezlui.com',
+        'message' => 'Je voulais vous dire que votre site est magnifique !'
+    ]);
+});

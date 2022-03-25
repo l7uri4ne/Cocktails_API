@@ -15,5 +15,6 @@ class CocktailController extends Controller
         return view('pages/cocktail', [
             'cocktail' => $response['drinks']['0']
         ]);
+
     }
 }
