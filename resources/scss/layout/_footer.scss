@@ -1,3 +1,26 @@
 footer{
-    background-color: #e088e9;
+
+    background-color: $grey;
+    color: $white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+
+    div.footerContent{
+
+        display: flex;
+        max-width: 1145px;
+        justify-content: space-between;
+        margin: auto;
+        line-height: 1.6;
+
+        a{
+
+            color: #FFF9E4;
+
+        }
+
+    }
+
 }
+
