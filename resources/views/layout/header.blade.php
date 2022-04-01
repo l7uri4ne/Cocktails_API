@@ -12,5 +12,5 @@
 </head>
 <body>
     <header>
-        <h1>Cocktails API</h1>
+        <h1><a href="/">Cocktails API</a></h1>
     </header>
