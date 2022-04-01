@@ -15,8 +15,13 @@ class ContactController extends Controller
     public function send(Request $request) {
         $contact = array();
         $contact['firstname'] = $request->firstname;
+        $contact['lastname'] = $request->lastname;
+        $contact['email'] = $request->email;
+        $contact['message'] = $request->message;
 
         Mail::to('l7uri4ne@gmail.com')
             ->send(new Contact($contact));
+        return view('pages/contact');
+
     }
 }
