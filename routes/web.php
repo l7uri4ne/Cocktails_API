@@ -13,22 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/cocktails', [App\Http\Controllers\CocktailsController::class, 'index'])->name('cocktails.index');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', [App\Http\Controllers\CocktailsController::class, 'index'])->name('cocktails.index');
 
 //Route::get('/cocktail', [App\Http\Controllers\CocktailController::class, 'index'])->name('cocktail.index');
 Route::get('/cocktail/{idDrink}', [App\Http\Controllers\CocktailController::class, 'index'])->name('cocktail.index');
 
-Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact.index');
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contactindex');
 
-Route::post('/contact', [App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'send'])->name('contactsend');
 
-Route::get('/test-contact', function () {
-    return new App\Mail\Contact([
-        'nom' => 'Durand',
-        'email' => 'durand@chezlui.com',
-        'message' => 'Je voulais vous dire que votre site est magnifique !'
-    ]);
-});
+//Route::get('/test-contact', function () {
+//    return new App\Mail\Contact([
+//        'nom' => 'Durand',
+//        'email' => 'durand@chezlui.com',
+//        'message' => 'Je voulais vous dire que votre site est magnifique !'
+//    ]);
+//});
