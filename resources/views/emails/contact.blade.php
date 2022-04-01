@@ -4,12 +4,13 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <h2>Prise de contact sur mon beau site</h2>
-    <p>Réception d'une prise de contact avec les éléments suivants :</p>
+    <h2>Formulaire de contact API cocktails</h2>
+    <p>Réception d'un contact depuis l'API cocktails :</p>
     <ul>
-        <li><strong>Nom</strong> : {{$contact['firstname']}}</li>
-        <li><strong>Email</strong> : </li>
-        <li><strong>Message</strong> : </li>
+        <li><strong>Prénom</strong> : {{$contact['firstname']}}</li>
+        <li><strong>Nom</strong> : {{$contact['lastname']}}</li>
+        <li><strong>Email</strong> : {{$contact['email']}}</li>
+        <li><strong>Message</strong> : {{$contact['message']}}</li>
     </ul>
 </body>
 </html>

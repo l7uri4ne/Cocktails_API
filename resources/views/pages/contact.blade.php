@@ -3,7 +3,7 @@
 <div class="contact">
 
     <h2>A question ? An observation ?</h2>
-    <form action="{{ route('contact.send') }}" method="POST">
+    <form action="{{ route('contactsend') }}" method="POST">
         {{ csrf_field() }}   {{--evite erreur 409--}}
         <div>
             <label for="firstname">First name:</label>
